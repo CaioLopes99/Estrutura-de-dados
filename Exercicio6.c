@@ -14,3 +14,5 @@
     printf("Media das notas: %.2f\n", mediaNotas);
 
  return 0;
+    
+  }
