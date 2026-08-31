@@ -4,17 +4,16 @@
 #define PI 3.1415926535
 #define ANO_ATUAL 2026
 
-  int main() {
-
+int main() {
     printf("Numero maximo de alunos por sala: %d\n", MAX_ALUNOS);
     printf("Quantidade maxima de produtos em estoque: %d\n", MAX_ESTOQUE);
     printf("Valor de PI: %.10f\n", PI);
     printf("Ano atual: %d\n", ANO_ATUAL);
 
-      // exemplo de uso prático das macros
+    // exemplo de uso prático das macros
+    float raio = 5.0;
+    float area_circulo = PI * raio * raio;
+    printf("Area de um circulo de raio %.1f: %.2f\n", raio, area_circulo);
 
-      float raio = 5.0;
-      float area_circulo = PI * raio * raio;
-       printf("Area de um circulo de raio %.1f: %.2f\n", raio, area_circulo);
-
- return 0;
+    return 0;
+}
