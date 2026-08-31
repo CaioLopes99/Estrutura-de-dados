@@ -6,18 +6,19 @@ int main() {
     int i, maior, menor, pares = 0, impares = 0;
     float soma = 0, media;
 
-   
+    // Leitura dos 20 números
     printf("Digite 20 numeros inteiros:\n");
     for (i = 0; i < TAMANHO; i++) {
         printf("Numero %d: ", i + 1);
         scanf("%d", &vetor[i]);
     }
 
+    // Inicializa maior e menor com o primeiro elemento
     maior = vetor[0];
     menor = vetor[0];
 
     for (i = 0; i < TAMANHO; i++) {
-     
+        // Maior e menor valor
         if (vetor[i] > maior) {
             maior = vetor[i];
         }
@@ -25,10 +26,10 @@ int main() {
             menor = vetor[i];
         }
 
-      
+        // Soma para a média
         soma += vetor[i];
 
-   
+        // Pares e ímpares
         if (vetor[i] % 2 == 0) {
             pares++;
         } else {
